@@ -1,0 +1,99 @@
+{
+ "hallazgos": [
+  "El escalamiento es el mayor freno del CSAT. Escalan 37,7 % de las llamadas atendidas, contra una meta de 15 %. El CSAT es 2,42 en casos escalados y 3,76 en los demás.",
+  "El escalamiento es parejo: entre 35 % y 40 % en todos los motivos. Además, el destino no sigue al motivo: solo 35 % llega al área esperada, casi lo mismo que el azar (33 %).",
+  "El abandono es 13,9 % y el nivel de servicio 56,9 %. Las franjas de 11, 12 y 20 h concentran 38 % de los abandonos con 28 % del volumen. Fuera de ellas el abandono sigue en 11,9 %.",
+  "El enrutamiento no separa motivos. Todas las colas reciben una mezcla casi idéntica (diferencia máxima 2,3 pp). Solo 16 % de las consultas de preventa llega a Ventas.",
+  "El FCR es 71,3 %. Reclamo de calidad (45 %), cambio de producto (56 %) y devolución (63 %) son los motivos más débiles. Los dos primeros reinciden cerca de 10 %.",
+  "La espera no mueve el CSAT: queda entre 3,25 y 3,30 en todos los tramos. Resolver bien pesa más que contestar rápido.",
+  "El valor en riesgo es 753.571 (28,2 % del total) y hay 1.649 casos pendientes. Los 25 agentes rinden de forma parecida (CSAT 3,18 a 3,34): el problema es de proceso."
+ ],
+ "top3": [
+  {
+   "titulo": "Reducir el escalamiento y corregir su destino.",
+   "detalle": "Dar autonomía al agente en los motivos frecuentes y fijar reglas de derivación por motivo. Bajar a 25 % llevaría el CSAT a ≈ 3,42."
+  },
+  {
+   "titulo": "Reforzar las franjas de 11–12 h y 20 h.",
+   "detalle": "Hacen falta cerca de 5 agentes simultáneos a las 11 h y 4 a las 20 h. Contrasta con la malla de turnos actual."
+  },
+  {
+   "titulo": "Corregir el enrutamiento del IVR.",
+   "detalle": "Cada motivo debe llegar a su cola. Es un cambio de bajo esfuerzo que ordena la carga y el escalamiento."
+  }
+ ],
+ "plan": [
+  {
+   "accion": "Fijar reglas de destino del escalamiento por motivo (envío, devolución y cambio a Logística; pago y facturación a Billing; Supervisor solo por excepción).",
+   "problema": "Escalamiento al área equivocada: solo 35 % llega al destino esperado.",
+   "responsable": "Jefe de operaciones y Calidad",
+   "esfuerzo": "Bajo",
+   "impacto": "Menos rebotes entre áreas y menor tiempo de respuesta en escalados.",
+   "medicion": "% de escalamientos al destino esperado de 35 % a 90 % o más. CSAT de escalados cada semana."
+  },
+  {
+   "accion": "Corregir el enrutamiento del IVR: preventa a Ventas, reclamo de calidad a Retenciones, envíos a Soporte_Envios.",
+   "problema": "Mezcla idéntica de motivos en todas las colas.",
+   "responsable": "Operaciones y TI telefonía",
+   "esfuerzo": "Bajo a medio",
+   "impacto": "Colas especializadas, menos transferencias y mejor uso de la capacidad.",
+   "medicion": "Mezcla de motivos por cola. Preventa en Ventas de 16 % a más de 80 %."
+  },
+  {
+   "accion": "Registrar el ticket en todas las llamadas atendidas y fijar una definición de FCR que excluya casos escalados.",
+   "problema": "14,7 % de atendidas sin ticket. FCR no distingue escalados y 1.278 pendientes figuran con FCR = 1.",
+   "responsable": "BI y Operaciones",
+   "esfuerzo": "Bajo",
+   "impacto": "Indicadores más fiables en la próxima corrida.",
+   "medicion": "Atendidas sin ticket igual a 0 %. Pendientes con FCR = 1 igual a 0."
+  },
+  {
+   "accion": "Activar devolución de llamada o mensaje de espera con tiempo estimado a partir de 20 s, en las franjas de 11–12 h y 20 h.",
+   "problema": "46 % de los abandonos ocurre entre 21 y 60 s.",
+   "responsable": "Operaciones y TI telefonía",
+   "esfuerzo": "Medio",
+   "impacto": "Recuperar parte de los contactos perdidos. Efecto por estimar tras un piloto.",
+   "medicion": "Abandono en franjas pico. Llamadas recuperadas por devolución."
+  },
+  {
+   "accion": "Entregar una matriz de autonomía: qué puede resolver el agente sin escalar en devolución, cambio, pago y facturación.",
+   "problema": "Escalamiento de 37,7 % uniforme en todos los motivos.",
+   "responsable": "Jefe de operaciones, Logística y Billing",
+   "esfuerzo": "Medio",
+   "impacto": "Con escalamiento en 25 %, CSAT ≈ 3,42 e insatisfechos ≈ 18,0 %. Con 15 %, CSAT ≈ 3,56.",
+   "medicion": "Escalamiento semanal (B3). CSAT escalado y no escalado. Meta intermedia: 25 % en 60 días."
+  },
+  {
+   "accion": "Rebalancear turnos: 5 agentes simultáneos a las 11 h y 4 a las 12 h y 20 h, según cálculo Erlang C. Contrastar con la malla actual y mover horas desde 14–18 h.",
+   "problema": "Abandono de 18,8 % en franjas pico y base de 11,9 % fuera de ellas.",
+   "responsable": "Planificación de turnos",
+   "esfuerzo": "Medio",
+   "impacto": "Abandono total hacia ≈ 11,9 % si los picos igualan al resto del día.",
+   "medicion": "Abandono y nivel de servicio por hora (A2, A3). Meta: 8 % y 80 %."
+  },
+  {
+   "accion": "Crear guías de resolución para reclamo de calidad, cambio de producto y devolución, con criterios de aprobación en la llamada.",
+   "problema": "FCR de 45 %, 56 % y 63 %. Reincidencia cercana a 10 % en reclamo y cambio.",
+   "responsable": "Capacitación y Calidad",
+   "esfuerzo": "Medio",
+   "impacto": "FCR global ≈ 75,5 % con reclamo y cambio en 75 %, y ≈ 77,8 % con devolución.",
+   "medicion": "FCR y reincidencia por motivo (C1, C2)."
+  },
+  {
+   "accion": "Plan de limpieza del backlog: cerrar 507 casos pendientes, priorizados por valor y antigüedad, y fijar un SLA de cierre.",
+   "problema": "Backlog de 14,4 % (1.649 casos, 394.075 en valor).",
+   "responsable": "Jefe de operaciones",
+   "esfuerzo": "Medio",
+   "impacto": "Backlog en 10 % (1.142 casos). Menos valor expuesto.",
+   "medicion": "Backlog semanal (C4) y valor pendiente (E2)."
+  },
+  {
+   "accion": "Revisar el cierre post-llamada: plantillas de notas y menos pantallas.",
+   "problema": "ACW de 37,6 s contra meta de 30 s.",
+   "responsable": "Operaciones y Calidad",
+   "esfuerzo": "Bajo a medio",
+   "impacto": "Unas 28 horas de agente liberadas en un periodo similar.",
+   "medicion": "ACW medio (B2) igual o menor a 30 s."
+  }
+ ]
+}
