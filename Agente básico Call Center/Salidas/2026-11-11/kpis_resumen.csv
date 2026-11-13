@@ -1,0 +1,47 @@
+﻿kpi,valor,unidad,meta,estado,variacion_vs_anterior,periodo
+A1 Volumen total de llamadas,15553.0,llamadas,,contexto,sin ejecución previa,2026-08-25 a 2026-10-23
+A1e Llamadas entrantes,13968.0,llamadas,,contexto,sin ejecución previa,2026-08-25 a 2026-10-23
+A1s Llamadas salientes,1585.0,llamadas,,contexto,sin ejecución previa,2026-08-25 a 2026-10-23
+A2 Tasa de abandono (entrantes),13.72,%,5.0,fuera,sin ejecución previa,2026-08-25 a 2026-10-23
+A3 Nivel de servicio 80/20 (entrantes),57.01,%,80.0,fuera,sin ejecución previa,2026-08-25 a 2026-10-23
+A4 ASA (velocidad media de respuesta),22.06,s,20.0,fuera,sin ejecución previa,2026-08-25 a 2026-10-23
+A5 Tiempo medio hasta abandono,52.85,s,,contexto,sin ejecución previa,2026-08-25 a 2026-10-23
+B1 AHT (duración + ACW),333.02,s,,contexto,sin ejecución previa,2026-08-25 a 2026-10-23
+B2 ACW medio,37.65,s,30.0,fuera,sin ejecución previa,2026-08-25 a 2026-10-23
+"B3 Carga por agente (atendidas, promedio)",535.92,llamadas,,contexto,sin ejecución previa,2026-08-25 a 2026-10-23
+B4 Tasa de escalamiento,37.69,%,15.0,fuera,sin ejecución previa,2026-08-25 a 2026-10-23
+C1 FCR (resolución en primer contacto),71.27,%,75.0,riesgo,sin ejecución previa,2026-08-25 a 2026-10-23
+C2 Tasa de reincidencia,5.59,%,5.0,fuera,sin ejecución previa,2026-08-25 a 2026-10-23
+C3 Tasa de reapertura,5.59,%,3.0,fuera,sin ejecución previa,2026-08-25 a 2026-10-23
+C4 Backlog pendiente (% de casos),14.44,%,10.0,fuera,sin ejecución previa,2026-08-25 a 2026-10-23
+C5 Tiempo medio de resolución (resueltos),18.33,h,24.0,cumple,sin ejecución previa,2026-08-25 a 2026-10-23
+C5p90 Tiempo de resolución P90 (resueltos),30.9,h,24.0,fuera,sin ejecución previa,2026-08-25 a 2026-10-23
+D1 CSAT medio,3.26,de 5,4.0,fuera,sin ejecución previa,2026-08-25 a 2026-10-23
+D2 CSAT Top-2-Box,42.66,%,80.0,fuera,sin ejecución previa,2026-08-25 a 2026-10-23
+D3 % insatisfechos (CSAT 1–2),24.22,%,10.0,fuera,sin ejecución previa,2026-08-25 a 2026-10-23
+D4 Valor en riesgo,753571.47,moneda local,,contexto,sin ejecución previa,2026-08-25 a 2026-10-23
+X1 Peso de franjas pico (10–13 h y 19–21 h) en entrantes,56.01,%,,apoyo,sin ejecución previa,2026-08-25 a 2026-10-23
+X2 Peso de franjas pico en abandonos,68.11,%,,apoyo,sin ejecución previa,2026-08-25 a 2026-10-23
+X3 Abandono en franjas pico,16.68,%,,apoyo,sin ejecución previa,2026-08-25 a 2026-10-23
+X4 Abandono fuera de pico,9.94,%,,apoyo,sin ejecución previa,2026-08-25 a 2026-10-23
+X5 Nivel de servicio en franjas pico,47.79,%,,apoyo,sin ejecución previa,2026-08-25 a 2026-10-23
+X6 Nivel de servicio fuera de pico,68.74,%,,apoyo,sin ejecución previa,2026-08-25 a 2026-10-23
+X7 ASA en franjas pico,27.04,s,,apoyo,sin ejecución previa,2026-08-25 a 2026-10-23
+X8 ASA fuera de pico,16.19,s,,apoyo,sin ejecución previa,2026-08-25 a 2026-10-23
+X9 Tiempo hasta abandono en pico,62.02,s,,apoyo,sin ejecución previa,2026-08-25 a 2026-10-23
+X10 Tiempo hasta abandono fuera de pico,33.24,s,,apoyo,sin ejecución previa,2026-08-25 a 2026-10-23
+X11 CSAT en casos escalados,2.42,de 5,,apoyo,sin ejecución previa,2026-08-25 a 2026-10-23
+X12 CSAT en casos no escalados,3.76,de 5,,apoyo,sin ejecución previa,2026-08-25 a 2026-10-23
+X13 % de casos escalados,37.6,%,,apoyo,sin ejecución previa,2026-08-25 a 2026-10-23
+X14 Insatisfechos que vienen de casos escalados,85.25,%,,apoyo,sin ejecución previa,2026-08-25 a 2026-10-23
+X15 Valor en riesgo en casos escalados,584405.45,moneda local,,apoyo,sin ejecución previa,2026-08-25 a 2026-10-23
+"X16 Valor en riesgo en casos escalados, % del total",77.55,%,,apoyo,sin ejecución previa,2026-08-25 a 2026-10-23
+X17 Escalamientos a Logística/Billing que no coinciden con el área esperada,47.78,%,,apoyo,sin ejecución previa,2026-08-25 a 2026-10-23
+X18 CSAT escenario con 25 % de escalamiento,3.43,de 5,,apoyo,sin ejecución previa,2026-08-25 a 2026-10-23
+X19 CSAT escenario con 15 % de escalamiento,3.56,de 5,,apoyo,sin ejecución previa,2026-08-25 a 2026-10-23
+X20 Correlación espera–CSAT,0.0,r,,apoyo,sin ejecución previa,2026-08-25 a 2026-10-23
+X21 Llamadas con ACW sobre 30 s,65.82,%,,apoyo,sin ejecución previa,2026-08-25 a 2026-10-23
+X22 Horas-agente por exceso de ACW en el periodo,28.46,h,,apoyo,sin ejecución previa,2026-08-25 a 2026-10-23
+X23 Pendientes con más de 30 días,48.33,%,,apoyo,sin ejecución previa,2026-08-25 a 2026-10-23
+X24 Pendientes con más de 14 días,74.53,%,,apoyo,sin ejecución previa,2026-08-25 a 2026-10-23
+X25 Margen de error del FCR por agente (95 %),4.15,pp,,apoyo,sin ejecución previa,2026-08-25 a 2026-10-23
